@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;;
+}
+.container-detalle-producto {
+    display: flex;
+    padding: 60px 0;
+}
+.calificaciones {
+    display: flex;
+    margin-bottom: 4px;
+}
+.calificaciones i {
+    height: 15px;
+    width: 15px;
+    color: #3A478F;
+    margin-right: 2px;
+}
+
+.container-detalleproducto-principal {
+    max-width: 1024px;
+    display: inherit;
+    margin: 0 auto;
+}
+.contenedor-informacion-producto {
+    width: inherit;
+    margin-bottom: 40px;
+}
+.informacion-detalles-producto {
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 40%;
+    padding-left: 30px;
+    color: #6B7F98;
+}
+.informacion-detalles-producto h3 {
+    margin-top: 10px;   
+    color: #6B7F98;
+}
+.informacion-detalles-producto h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #3A478F;
+}
+.informacion-detalles-producto p{
+    color: #6B7F98;
+}
+.lee-resenas{ 
+    text-decoration: underline;
+    cursor: pointer;
+    color: #6B7F98;
+}
+.precio-informacion {
+    margin: 5px 0;
+    font-size: 20px;
+    
+}
+.container-imagenes-detalle{
+    width: 60%;
+}
+.container-imagenes-detalle img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.btn-añadir-cotizacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #608AD8;
+    color: white;
+    font-size: 16px;
+    font-family: 'Catamaran' , sans-serif;
+    font-weight: 400;
+    height: 50px;
+    width: 180px;
+    border-radius: 60px;
+    outline: none;
+    transition: .4s ease-in-out;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.btn-añadir-cotizacion:hover {
+    transform: scale(1.05);
+}
+.btn-añadir-cotizacion p {
+    margin-top: 0;
+    color: white;;
+}
+.informacion-del-producto {
+    width: 60%;
+    /* background: black; */
+    /* height: 80px; */
+    padding: 0 40px 0 0;
+}
+.imagen-del-producto {
+    width: 40%;
+    /* background: red; */
+    /* height: 80px; */
+}
+.container-informacion-del-producto {
+    display: flex;
+    display: none;
+    align-items: center;
+    margin: 40px 0;
+}
+.imagen-del-producto img {
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.titulo-informacion {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:  #3A478F;
+}
+.subtitulo-informacion {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #6B7F98;
+}
+.descripcion-producto {
+    font-size: 18px;
+    color: #6B7F98;
+}
+.title-descripcion {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3A478F;
+    margin-bottom: 40px;
+}
+.subtitle-descripcion {
+    font-size: 30px;
+    color: #6B7F98;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btns-detalle-producto {
+    display: flex;
+
+}
+.btn-descripcion-producto , .btn-detalles-producto , .btn-comentarios {
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 48px;
+    background: white;
+    border: 1px solid blue;
+    outline: none;
+    cursor: pointer;
+}
+.btn-descripcion-producto:hover , .btn-detalles-producto:hover , .btn-comentarios:hover {
+    font-weight: bold;
+}
+.container-detalles-del-producto {
+    display: flex;
+    display: none;
+    color: #6B7F98;
+    margin-left: 40px;
+    padding: 40px 0;
+}
+.container-listado-izquierdo , .container-listado-derecho {
+    width: 100%;
+}
+.listado-izquierdo li, .listado-derecho li{
+    margin-bottom: 20px;
+}
+.listado-derecho {
+    margin-left: 40px;
+}
+.container-comentarios {
+    display: flex;
+    margin-top: 50px;
+}
+.comentarios-izq {
+    margin-right: 20px;
+}
+.comentarios-der {
+    margin-left: 20px;
+}
+.comentarios-izq , .comentarios-der {
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #3A478F;
+}
+.calificacion-fecha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.fecha-comentario {
+    font-size: 14px;
+    color: #6B7F98;
+}
+.title-comentario {
+    color: #3A478F;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.calificacion-comentario i {
+    color: #3A478F;
+}
+.comentario-usuario {
+    color: #6B7F98;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.recomiendo-producto {
+    color: #767677;
+    font-size: 14px;
+}
+.usuario-cliente {
+    color: #608ad8;
+}

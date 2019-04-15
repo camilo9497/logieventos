@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+form h2 {
+    font-size: 30px;
+    font-family: 'Catamaran' , sans-serif;
+    color: #3A478F;
+}
+body {
+    color: #385190;
+    font-family: 'Karla' , sans-serif;
+}
+.login {
+    display: flex;
+}
+.container-iniciar-sesion , .container-registrarse {
+    width: 50%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.formulario-iniciar-sesion , .formulario-registrarse{
+    width: 70%;
+    margin: 0 auto;
+}
+.container-datos, .container-datos-registro {
+    border: none;
+    border-bottom: 1px solid #C5CCDC;
+    padding-bottom: 5px;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 40px;
+}
+.container-datos-registro input{
+    background:#EFF3F9;
+}
+.container-datos label , .container-datos-registro label{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    cursor: auto;
+}
+.container-datos input, .container-datos-registro input {
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 80%;
+}
+.container-button , .container-button-registrarse {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-iniciar-sesion , .btn-registrarse {
+    cursor: pointer;
+    margin-top: 50px;
+    border: none;
+    background: #608AD8;
+    color: white;
+    font-size: 16px;
+    font-family: 'Catamaran' , sans-serif;
+    font-weight: 400;
+    height: 50px;
+    width: 150px;
+    border-radius: 60px;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+.btn-iniciar-sesion:hover , .btn-registrarse:hover {
+    transform: scale(1.05);
+}
+.container-registrarse {
+    width: 50%;
+    background: #EFF3F9;
+}
+
+@media screen and (max-width:960px) {
+    .container-iniciar-sesion , .container-registrarse {
+        padding: 45px 0;
+    }
+}
+@media screen and (max-width:780px) {
+    .login {
+        flex-wrap: wrap;
+    }
+    .container-iniciar-sesion , .container-registrarse {
+        width: 100%;
+    }
+    .container-button , .container-button-registrarse {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .btn-iniciar-sesion , .btn-registrarse {
+        width: 134px;
+        height: 38px;
+        margin-top: 30px;
+    }
+}
