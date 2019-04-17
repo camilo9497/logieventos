@@ -55,6 +55,9 @@
     font-size: 20px;
     
 }
+.description-product {
+    text-align: justify;
+}
 .container-imagenes-detalle{
     width: 60%;
 }
@@ -96,8 +99,6 @@
 }
 .imagen-del-producto {
     width: 40%;
-    /* background: red; */
-    /* height: 80px; */
 }
 .container-informacion-del-producto {
     display: flex;
@@ -105,9 +106,13 @@
     align-items: center;
     margin: 40px 0;
 }
+.container-informacion-del-producto .titulo-responsive-descripcion {
+    display: none;
+}
 .imagen-del-producto img {
     box-sizing: border-box;
     object-fit: cover;
+    width: 100%;
 }
 .titulo-informacion {
     font-size: 32px;
@@ -151,7 +156,8 @@
     width: 100%;
     height: 48px;
     background: white;
-    border: 1px solid blue;
+    border: 1px solid #243767;
+    color: #3A478F;
     outline: none;
     cursor: pointer;
 }
@@ -164,6 +170,13 @@
     color: #6B7F98;
     margin-left: 40px;
     padding: 40px 0;
+
+}
+.container-detalles-del-producto p {
+    display: none;
+}
+.titulo-responsive-comentarios {
+    display: none;
 }
 .container-listado-izquierdo , .container-listado-derecho {
     width: 100%;
@@ -176,6 +189,7 @@
 }
 .container-comentarios {
     display: flex;
+    /* display: none; */
     margin-top: 50px;
 }
 .comentarios-izq {
@@ -218,4 +232,213 @@
 }
 .usuario-cliente {
     color: #608ad8;
+}
+@media screen and (max-width:1064px) {
+    .container-detalle-producto {
+        padding: 60px 40px;
+    }
+    .contenedor-informacion-producto {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .container-detalleproducto-principal {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .container-imagenes-detalle , .informacion-detalles-producto {
+        width: 100%;
+    }
+    .informacion-detalles-producto {
+        padding-left: 10px;
+    }
+    .description-product {
+        display: none;
+    }
+    .container-precio-boton {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;    
+    }
+    .btn-añadir-cotizacion {
+        margin: 0;
+    }
+    .precio-informacion {
+        display: flex;
+        align-items: center;
+    }
+    .container-comentarios {
+        flex-wrap: wrap;
+        margin: 0;   
+    }
+    .comentarios-izq , .comentarios-der {
+        margin: 0;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:860px) {
+    .imagen-del-producto {
+        display: none;
+    }
+    .informacion-del-producto {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width:640px) {
+    .btn-añadir-cotizacion {
+        height: 40px;
+        width:150px ;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:580px) { 
+    .btn-añadir-cotizacion {
+        height: 35px;
+        width:130px ;
+        font-size: 14px;
+    }
+    .title-descripcion {
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .titulo-informacion {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .container-detalles-del-producto {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .listado-derecho {
+        margin: 0;
+    }
+    .btn-descripcion-producto , .btn-detalles-producto , .btn-comentarios {
+        font-size: 15px;
+        color: #3A478F;
+    }
+    .listado-derecho li , .listado-izquierdo li {
+        margin-bottom: 15px;
+    }
+    .title-descripcion {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .container-detalle-producto {
+        padding: 20px;
+    }
+    .contenedor-informacion-producto {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:450px) {
+    .btns-detalle-producto {
+        flex-direction: column;
+    }
+    .container-detalles-del-producto {
+        margin-left: 0;
+    }
+    .container-detalles-del-producto  p{
+        display: initial;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #3A478F;
+        letter-spacing: 2px;
+    }
+    .container-listado-derecho, .container-listado-izquierdo {
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+    .container-informacion-del-producto {
+        flex-direction: column;
+    }
+    .container-informacion-del-producto .titulo-responsive-descripcion {
+    display: initial;
+    }
+    .titulo-responsive-descripcion {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #3A478F;
+        letter-spacing: 2px; 
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .descripcion-producto {
+        text-align: justify;
+    }
+    .title-descripcion {
+        line-height: 32px;
+    }
+    .titulo-responsive-comentarios {
+        margin-top: 40px;
+        display: initial;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #3A478F;
+        letter-spacing: 2px; 
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container-listado-izquierdo , .container-listado-derecho {
+        padding-left: 20px;
+    }
+    .titulo-informacion {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .subtitulo-informacion {
+        font-size: 20px;
+    }
+    .descripcion-producto {
+        font-size: 16px;
+    }
+    .fecha-comentario {
+        font-size: 12px;
+    }
+    .title-comentario {
+        font-size: 20px;
+    }
+    .comentario-usuario {
+        font-size: 16px;
+    }
+    .usuario-cliente {
+        font-size: 14px;
+    }
+    .btn-añadir-cotizacion {
+        height: 30px;
+        font-size: 13px;
+        width: 120px;
+    }
+
+    .titulo-informacion-reseña {
+        font-size: 16px;
+    }
+    .informacion-detalles-producto h2{
+        font-size: 22px;
+    }
+    .precio-informacion {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 335px) {
+    .informacion-detalles-producto {
+        padding: 0;
+    }
+    .container-precio-boton {
+        flex-direction: column;
+    }
+    .btn-añadir-cotizacion {
+        width: 100%;
+    }
 }
