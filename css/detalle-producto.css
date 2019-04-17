@@ -192,17 +192,71 @@
     /* display: none; */
     margin-top: 50px;
 }
-.comentarios-izq {
-    margin-right: 20px;
+.container-detalles-valoracion {
+    /* margin-right: 20px; */
+    width: 40%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+.general-valoracion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background: #203260;
+    color: white;
+}
+.valor-promedio {
+    font-size: 57px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.general-valoracion-ayudante {
+    flex-wrap: wrap;
+}
+.container-valoraciones , .numero-comentarios {
+    width: 100%;
+    font-size: 13px;
+}
+.title-detalle-valoracion {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.rating-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+.rating-bar-container p {
+    text-transform: uppercase;
+    font-size: 16.5px;
+}
+.rating-bar-container span {
+    font-size: 13px;
+}
+.rating-bar {
+    height: 3px;
+    background: #D9DCDD;
+    width: calc(100% - 110px);
+    position: relative;
+}   
+.rating-bar-value {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    background: #203260;
 }
 .comentarios-der {
-    margin-left: 20px;
+    width: 60%;
+    /* border-bottom: 1px solid #3A478F; */
 }
-.comentarios-izq , .comentarios-der {
-    width: 100%;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #3A478F;
+.comentarios {
+    margin-bottom: 25px;
 }
+
 .calificacion-fecha {
     display: flex;
     justify-content: space-between;
@@ -229,9 +283,17 @@
 .recomiendo-producto {
     color: #767677;
     font-size: 14px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #3A478F;
+}
+.cliente-verificado {
+    color: gray;
+    margin-left: 5px;
+    font-size: 14px;
 }
 .usuario-cliente {
     color: #608ad8;
+    display: inline-block;
 }
 @media screen and (max-width:1064px) {
     .container-detalle-producto {
@@ -268,14 +330,7 @@
         display: flex;
         align-items: center;
     }
-    .container-comentarios {
-        flex-wrap: wrap;
-        margin: 0;   
-    }
-    .comentarios-izq , .comentarios-der {
-        margin: 0;
-        margin-top: 40px;
-    }
+    
 }
 @media screen and (max-width:860px) {
     .imagen-del-producto {
@@ -284,6 +339,17 @@
     .informacion-del-producto {
         width: 100%;
         padding: 0;
+    }
+}
+@media screen and (max-width:760px) {
+    .container-comentarios {
+        flex-wrap: wrap;
+        margin: 0;   
+    }
+    .container-detalles-valoracion , .comentarios-der {
+        margin-top: 40px;
+        width: 100%;
+        padding-right: 0;
     }
 }
 @media screen and (max-width:640px) {
