@@ -385,7 +385,6 @@
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    /* background: blue; */
     background: rgba(255,255,255,0.05);
     margin-right: 15px;
     margin-bottom: 8px;
@@ -421,6 +420,10 @@
     text-align: center;
     line-height: 45px;
     font-size: 20px;
+    cursor: pointer;
+}
+.container-redes-sociales i:hover {
+    font-size: 24px;
 }
 .footer-inferior {
     height: 50px;

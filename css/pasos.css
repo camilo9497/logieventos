@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.steps {
+    width: 100%;
+}
+.container-escoger {
+    /* border: 1px solid black; */
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.container-pasos {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 850px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.title-cotizacion {
+    font-size: 45px;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 45px;
+    margin-bottom: 20px;
+    letter-spacing: initial;
+    font-weight: bold;
+    color: #3A478F;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+}
+.pasos {
+    display: flex;
+    align-items: center;
+}
+.pasos-bar {
+    width: 100%;
+}
+.pasos-circulo {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #687AA8;
+    border-radius: 50%;
+    background:#687AA8;
+}
+.pasos-linea {
+    height: 3px;
+    width: calc(100% - 12px);
+    background: #687AA8;
+}
+.pasos-bar:last-child{
+    width: 20px;
+}
+.pasos-bar:last-child .pasos-detalles{
+    margin-left: -44px;
+    width: 100px;
+}
+.pasos-bar:last-child .pasos-linea {
+    display: none;
+}
+.pasos-detalles {
+    margin-left: calc(-100% + 12px);
+    text-align: center;
+    margin-top: 10px;
+    color: #6B7F98;
+}
+.paso-circulo-no-alcanzado{
+    background: white;
+    border: 2px solid lightgray;
+}
+.paso-barra-no-alcanzado{
+    background: lightgray;
+}
+.paso-paso {
+    display: none;
+}
+.opciones {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.seleccionado {
+    border: 1px solid rgb(32, 50, 96);
+    box-shadow: 0 0 20px 0 rgba(32,50,96, 0.2), 0 5px 5px 0 rgba(32,50,96, 0.24);
+}
+.check {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #203260;
+    opacity: .9;
+    border: 1px solid #203260;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.chulo {
+    width: 8px;
+    height: 3px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
+}
+.imagen-opciones {
+    /* position: relative; */
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    object-fit: cover;
+    display: block;
+}
+.opciones-btn {
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255, .6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.opciones:hover .opciones-btn {
+    opacity: 1;
+}
+.contenedor-ayuda {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.contenedor-opciones-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-opciones {
+    text-transform: uppercase;
+    color: #1D2D56;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.btn-opciones-hover {
+    height: 40px;
+    width: 120px;
+    background: #1D2D56;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.btn-opciones-hover a {
+    text-decoration: none;
+     color: #1D2D56;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     width: 100%;
+}
+.ver-mas-opciones {
+    background: transparent;
+    border: 2px solid #1D2D56;
+    font-weight: 600;
+}
+
+.botones {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.contenedor-botones {
+    width: 100%;
+}
+.btn-pasos {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #608AD8 ;
+    background:#203260;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 60px;
+    outline: none;
+}
+.btn-pasos:hover .desde-centro {
+    transform: translateX(-7.5px) scaleX(15);
+}
+.btn-pasos:hover .hacer-flechas {
+    width: 15px;
+}
+
+.btn-pasos:hover:first-child .desde-centro-izq {
+    transform: translateX(7.5px) scaleX(15);
+}
+.btn-pasos:hover .hacer-flechas-izq {
+    width: 15px;
+}
+.contenedor-botones:first-child .btn-pasos {
+    flex-direction: row-reverse;
+}
+.contenedor-botones:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 950px) {
+    .container-pasos {
+        margin: 50px 50px;
+    }
+    .container-escoger {
+        margin: 0 35px;
+        margin-bottom: 30px;
+    }
+    .botones {
+        margin: 0 35px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:800px) {
+    .pasos-detalles p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:700px) {
+    .btn-pasos {
+        height: 45px;
+        width: 135px;
+    }
+}
+@media screen and (max-width:560px) {
+    .container-pasos {
+        margin-top: 0;
+    }
+    .pasos-detalles {
+        display: none;
+    }
+    .paso-paso {
+        display: initial;
+        display: block;
+        text-align: center;
+        color: #6B7F98;
+        text-transform: uppercase;
+        margin: 30px 0;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+    }
+}
