@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: -1.2px;
+}
+
+.hero {
+    height: 564px;
+    background: #213262;
+}
+.title-sections {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
+    font-family: 'Catamaran' , sans-serif;
+    /* color: #3A478F; */
+    color: #243767;
+    text-transform: uppercase;
+    /* background: #F2F5FA; */
+}
+
+.container-eventos-inicio-izq {
+    display: flex;
+}
+.container-eventos-inicio-der {
+    display: flex;
+}
+.container-imagen-evento {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    line-height: 0;
+}
+.imagen-evento {
+    width: 100%;
+}
+.informacion-evento {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 90px;
+    background:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:gray;
+}
+.tematica-evento{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.2em;
+    color: #385190;
+    font-weight: 800;
+    letter-spacing: initial;
+}
+.informacion-evento p span{
+    color: #608AD8;
+}
+.container-descripcion-evento {
+    width: 50%;
+    background: #243767;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 60px 0 140px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.container-salones {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 20px;
+    padding-top:0;
+}
+.salones {
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+.salones a {
+    text-decoration: none;
+}
+.a:hover .title-salones {
+    border-bottom: 2px solid #3A478F;
+    margin-bottom: 8px;
+}
+.salones:first-child {
+    padding-left: 0;
+}
+.imagen-salones {
+   width: 100%;
+   object-fit: cover;
+}
+.title-salones {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    color: #3A478F;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description-salones {
+    color: #6B7F98;
+}
+
+
+@media screen and (max-width:1130px){
+    .container-descripcion-evento {
+        padding: 80px 60px 0 100px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .informacion-evento {
+        height: 70px;
+        width: 180px;
+    }
+    .container-descripcion-evento {
+        padding-top: 0;
+        padding-left: 75px;
+    }
+}
+@media screen and (max-width:960px){
+    .container-eventos-inicio-izq , .container-eventos-inicio-der{
+        flex-wrap: wrap;
+    }
+    .container-imagen-evento , .container-descripcion-evento {
+        width: 100%;
+    }
+    .container-eventos-inicio-der .container-imagen-evento {
+        order: -1;
+    }
+    .imagen-evento {
+        height: 550px;
+        object-fit: cover;
+    }
+    
+    .flechas {
+        display: none;
+    }
+    .flechas-responsive {
+    display: initial;
+    display: flex;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    background: #243767;
+    width: 20%;
+    height: 70px;
+    cursor: pointer;
+    }
+    .flecha-izq-responsive {
+        width: 100%;
+        background: #1A284D;
+        margin-right: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        box-sizing: border-box;
+        transition: all .4s ease;
+    }
+    .flecha-izq-responsive:hover .desde-centro-izq{
+        transform: translateX(7.5px) scaleX(15);
+    }
+    .flecha-izq-responsive:hover .hacer-flechas-izq {
+        width: 15px;
+    }
+    .flecha-der-responsive {
+        width: 100%;
+        background: #1A284D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        transition: all .4s ease;
+    }  
+    .flecha-der-responsive:hover .desde-centro {
+        transform: translateX(-7.5px) scaleX(15);
+    } 
+    .flecha-der-responsive:hover .hacer-flechas {
+        width: 15px;
+
+    }
+    .ver-mas {
+        margin-bottom: 25px;
+    } 
+    .informacion-evento {
+        top: initial;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+    }
+}
+@media screen and (max-width:936px) {
+    .title-sections {
+        padding: 40px 0;
+    }      
+    
+    .container-salones {
+        padding: 0 10px 50px 10px;
+    }
+}
+@media screen and (max-width:780px) {
+    .container-salones {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .salones {
+        width: 100%;
+    }
+    .a{
+        display: flex;
+    }
+    .container-imagen-salones , .container-informacion-salones {
+        width: 50%;
+    }
+    .container-imagen-salones {
+        line-height: 0;
+    }
+    .container-informacion-salones {
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 25px;
+    }
+    .mas-salones {
+        justify-content: center;
+    }
+    .container-salones .salones:nth-child(2) .container-informacion-salones {
+        order: -1;
+    }
+}
+@media screen and (max-width:600px) {
+   .title-salones {
+       font-size: 22px;
+   }
+   .description-salones {
+       font-size: 15px;
+   }
+   .mas-salones {
+       padding-top: 20px;
+       margin-bottom: 15px;
+   }
+}
+@media screen and (max-width:550px){
+    .container-descripcion-evento {
+        padding: 0 80px;
+        text-align: center;
+    }
+    .title-sections {
+        font-size: 35px;
+    }
+
+}
+@media screen and (max-width:480px) {
+    .a {
+        flex-wrap: wrap;
+    }
+    .container-imagen-salones {
+        width: 100%;
+    }
+    .container-informacion-salones {
+        width: 100%;
+    }
+    .container-salones .salones:nth-child(2) .container-informacion-salones {
+        order: 1;
+    }
+    
+}
+@media screen and (max-width:414px) {
+    .empresa {
+        padding: 0 45px 25px 45px;
+    }
+    .container-descripcion-evento {
+        padding: 0 60px;
+    }
+    .imagen-evento , .imagen-empresa{
+       height:450px;
+    }
+}

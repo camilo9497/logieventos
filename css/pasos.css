@@ -202,7 +202,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    border: 1px solid #608AD8 ;
+    border: 1px solid #203260 ;
     background:#203260;
     cursor: pointer;
     font-size: 16px;
@@ -271,12 +271,9 @@
         font-weight: bold;
         letter-spacing: 0.2px;
     }
-}
-@media screen and (max-width:480px) {
-    .title-cotizacion {
-        font-size: 40px;
+    .container-escoger {
+        grid-template-columns: 1fr;
     }
-    
     .btn-pasos {
         height: 35px;
         width: 138px;
@@ -284,7 +281,7 @@
     }
 }
 @media screen and (max-width:480px) {
-    .container-escoger {
-        grid-template-columns: 1fr;
+    .title-cotizacion {
+        font-size: 40px;
     }
 }

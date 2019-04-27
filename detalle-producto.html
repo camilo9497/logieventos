@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:400,800|Karla:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/detalle-producto.css">
@@ -67,7 +68,7 @@
                         <i class="icon-rate"></i>
                         <i class="icon-rate2"></i>
                     </div>
-                    <a class="lee-resenas" href="">Lee reseñas</a>
+                    <a class="lee-resenas" href="#contenedor-informacion-producto" id="lee-resenas">Lee reseñas</a>
                     <h3 class="titulo-informacion-reseña">Eventos</h3>
                     <div>
                         <h2 class="titulo-informacion-producto">Boda Vintage</h2>
@@ -94,21 +95,21 @@
         </div>
     </section>
 
-    <section class="contenedor-informacion-producto">
+    <section class="contenedor-informacion-producto" id="contenedor-informacion-producto">
         <div class="container-detalleproducto-principal">
             <div class="titulos-producto">
                 <p class="title-descripcion">Detalles del Producto</p>
                 <div class="btns-detalle-producto">
-                    <button class="btn-descripcion-producto">Descripcion</button>
-                    <button class="btn-detalles-producto">Detalles</button>
-                    <button class="btn-comentarios">Comentarios</button>
+                    <button class="btn-descripcion-producto seleccionado" id="descripcion">Descripcion</button>
+                    <button class="btn-detalles-producto" id="detalles">Detalles</button>
+                    <button class="btn-comentarios" id="comentarios">Comentarios</button>
                 </div>
             </div>
         </div>
         <div class="container-detalleproducto-principal">
             <div class="no">
 
-                <div class="container-informacion-del-producto">
+                <div class="container-informacion-del-producto mostrar " id="contenido-descripcion">
                     <p class="titulo-responsive-descripcion">Descripcion</p>
                     <div class="informacion-del-producto">
                         <p class="titulo-informacion">TITULO</p>
@@ -124,7 +125,7 @@
                     </div>
                 </div>
 
-                <div class="container-detalles-del-producto">
+                <div class="container-detalles-del-producto" id="contenido-detalles">
                     <p>Detalles</p>
                     <div class="container-listado-izquierdo">
                         <ul class="listado-izquierdo">
@@ -147,8 +148,8 @@
                     </div>
                 </div>
 
-                <p class="titulo-responsive-comentarios">Comentarios</p>
-                <div class="container-comentarios">
+                <div class="container-comentarios" id="contenido-comentarios">
+                    <p class="titulo-responsive-comentarios">Comentarios</p>
                     <div class="container-detalles-valoracion">
                         <div class="general-valoracion">
                             <span class="valor-promedio">4.5</span>
@@ -317,6 +318,7 @@
         </div>
     </footer>
 </body>
-<script src="./js/index.js"></script>
+<script src="./js/base.js"></script>
+<script src="./js/producto.js"></script>
 
 </html>
