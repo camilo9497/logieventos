@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pasos.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
@@ -37,6 +38,26 @@
                     </li>
                     <li class="list-menu">
                         <a href="login.html">Iniciar Sesion</a>
+                    </li>
+                    <li class="list-menu">
+                        <a href="">Mi cuenta</a>
+                        <div class="mi-cuenta-modal">
+                            <div class="container-ver-reservas">
+                                <div class="container-miCuenta">
+                                    <i class="icon-user"></i>
+                                    <a class="miCuenta-list" href="">Perfil</a>
+                                </div>
+                                <div class="container-miCuenta">
+                                    <i class="icon-file-text2"></i>
+                                    <a class="miCuenta-list" href="">Ver Reservas</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-miCuenta">
+                                <i class="icon-exit"></i>
+                                <a class="miCuenta-list" href="">Cerrar Sesión</a>
+                            </div>
+                        </div>
                     </li>
 
                 </ol>
@@ -108,30 +129,16 @@
                 </div>
             </div>
         </div>
-        <div class="container-escoger">
-            <div class="opciones">
-                <div class="check">
-                    <div class="chulo"></div>
-                </div>
-                <img class="imagen-opciones" src="images/bodahawaina.jpg" alt="">
-                <div class="opciones-btn">
-                    <div class="contenedor-ayuda">
-                        <p class="title-opciones">Bodas</p>
-                        <div class="contenedor-opciones-botones">
-                            <button class="btn-opciones-hover ver-mas-opciones">
-                                <a href="eventos.html">Ver más</a>
-                            </button>
-                            <button class="btn-opciones-hover">Seleccionar</button>
-                        </div>
+        <form method="POST" action="login.html">
+            <div class="container-escoger">
+                <div class="opciones">
+                    <div class="check">
+                        <div class="chulo"></div>
                     </div>
-                </div>
-            </div>
-            <div class="opciones">
-                <img class="imagen-opciones" src="images/grados.jpg" alt="">
-                <div class="opciones-btn">
+                    <img class="imagen-opciones" src="images/bodahawaina.jpg" alt="">
                     <div class="opciones-btn">
                         <div class="contenedor-ayuda">
-                            <p class="title-opciones">Grados</p>
+                            <p class="title-opciones">Bodas</p>
                             <div class="contenedor-opciones-botones">
                                 <button class="btn-opciones-hover ver-mas-opciones">
                                     <a href="eventos.html">Ver más</a>
@@ -141,61 +148,77 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="opciones">
-                <img class="imagen-opciones" src="images/15años.jpg" alt="">
-                <div class="opciones-btn">
+                <div class="opciones">
+                    <img class="imagen-opciones" src="images/grados.jpg" alt="">
                     <div class="opciones-btn">
-                        <div class="contenedor-ayuda">
-                            <p class="title-opciones">Fiestas de 15</p>
-                            <div class="contenedor-opciones-botones">
-                                <button class="btn-opciones-hover ver-mas-opciones">
-                                    <a href="eventos.html">Ver más</a>
-                                </button>
-                                <button class="btn-opciones-hover">Seleccionar</button>
+                        <div class="opciones-btn">
+                            <div class="contenedor-ayuda">
+                                <p class="title-opciones">Grados</p>
+                                <div class="contenedor-opciones-botones">
+                                    <button class="btn-opciones-hover ver-mas-opciones">
+                                        <a href="eventos.html">Ver más</a>
+                                    </button>
+                                    <button class="btn-opciones-hover">Seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opciones">
+                    <img class="imagen-opciones" src="images/15años.jpg" alt="">
+                    <div class="opciones-btn">
+                        <div class="opciones-btn">
+                            <div class="contenedor-ayuda">
+                                <p class="title-opciones">Fiestas de 15</p>
+                                <div class="contenedor-opciones-botones">
+                                    <button class="btn-opciones-hover ver-mas-opciones">
+                                        <a href="eventos.html">Ver más</a>
+                                    </button>
+                                    <button class="btn-opciones-hover">Seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opciones">
+                    <img class="imagen-opciones" src="images/decoracionbautizos.jpg" alt="">
+                    <div class="opciones-btn">
+                        <div class="opciones-btn">
+                            <div class="contenedor-ayuda">
+                                <p class="title-opciones">Bautismos</p>
+                                <div class="contenedor-opciones-botones">
+                                    <button class="btn-opciones-hover ver-mas-opciones">
+                                        <a href="eventos.html">Ver más</a>
+                                    </button>
+                                    <button class="btn-opciones-hover">Seleccionar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="opciones">
-                <img class="imagen-opciones" src="images/decoracionbautizos.jpg" alt="">
-                <div class="opciones-btn">
-                    <div class="opciones-btn">
-                        <div class="contenedor-ayuda">
-                            <p class="title-opciones">Bautismos</p>
-                            <div class="contenedor-opciones-botones">
-                                <button class="btn-opciones-hover ver-mas-opciones">
-                                    <a href="eventos.html">Ver más</a>
-                                </button>
-                                <button class="btn-opciones-hover">Seleccionar</button>
-                            </div>
+            <div class="botones">
+                <div class="contenedor-botones">
+                    <button type="submit" class="btn-pasos">Regresar
+                        <div class="hacer-flechas-izq">
+                            <div class="hacia-arriba-izq color-flechas"></div>
+                            <div class="desde-centro-izq color-flechas"></div>
+                            <div class="hacia-abajo-izq color-flechas"></div>
                         </div>
-                    </div>
+                        </buttom>
                 </div>
-            </div>
-        </div>
-        <div class="botones">
-            <div class="contenedor-botones">
-                <button type="submit" class="btn-pasos">Regresar
-                    <div class="hacer-flechas-izq">
-                        <div class="hacia-arriba-izq color-flechas"></div>
-                        <div class="desde-centro-izq color-flechas"></div>
-                        <div class="hacia-abajo-izq color-flechas"></div>
-                    </div>
-                    </buttom>
-            </div>
-            <div class="contenedor-botones">
-                <button type="submit" class="btn-pasos">Continuar
-                    <div class="hacer-flechas">
-                        <div class="hacia-arriba color-flechas"></div>
-                        <div class="desde-centro color-flechas"></div>
-                        <div class="hacia-abajo color-flechas"></div>
-                    </div>
-                </button>
-            </div>
+                <div class="contenedor-botones">
+                    <button type="submit" class="btn-pasos">Continuar
+                        <div class="hacer-flechas">
+                            <div class="hacia-arriba color-flechas"></div>
+                            <div class="desde-centro color-flechas"></div>
+                            <div class="hacia-abajo color-flechas"></div>
+                        </div>
+                    </button>
+                </div>
 
-        </div>
+            </div>
+        </form>
     </section>
 
 

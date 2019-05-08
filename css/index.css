@@ -205,6 +205,12 @@
     }
 }
 @media screen and (max-width:780px) {
+    .flechas-responsive {
+        width: 140px;
+    }
+    .informacion-evento {
+        width: calc(100% - 140px);
+    }
     .container-salones {
         flex-wrap: wrap;
         padding: 0;
