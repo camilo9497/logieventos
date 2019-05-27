@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    font-family: 'Karla', sans-serif;
+
+}
+
+.container-escoger-resumen {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.opciones-resumen {
+    display: flex;
+}
+.descripcion-opcion-escogida {
+    width: 50%;
+    padding-right: 50px;
+    position: relative;
+}
+.container-imagen-opciones {
+    width: 50%;
+    position: relative;
+    opacity: .6;
+}
+.opciones-resumen:hover .container-imagen-opciones{
+    opacity: 1;
+}
+.imagen-opciones {
+    width: 100%;
+
+}
+.check-resumen {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #203260;
+    opacity: .9;
+    border: 1px solid #203260;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.seleccionado-resumen {
+    border: 1px solid rgb(32, 50, 96);
+    box-shadow: 0 0 20px 0 rgba(32,50,96, 0.2), 0 5px 5px 0 rgba(32,50,96, 0.24);
+    display: flex;
+}
+
+.title-resumen {
+    font-size: 36px;
+    color: #3A478F;
+}
+.description-resumen {
+    margin-top: 10px;
+    color: #6B7F98;
+}
+.precio-boton {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    left: 0;
+    justify-content: space-between;
+}
+.precio-seccion {
+    color: #203260;
+    line-height: 35px;
+}
+.btn-cambiar {
+    cursor: pointer;
+    height: 35px;
+    width: 120px;
+    /* background: #203260; */
+    background: #608AD8;
+    border: none;
+    color: white;
+}
+
+.container-precio-total {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.container-resumen-precios {
+    display: flex;
+}
+.container-titulos-precios p {
+    color: #203260;
+    margin-right: 70px;
+}
+.container-precios-subtotal p {
+    color: #6B7F98;
+}
+.container-total-pagar h2 {
+    color: #203260;
+}
+
+@media screen and (max-width: 960px) {
+    .container-escoger-resumen {
+         margin: 0 35px;
+         margin-bottom: 40px;
+         
+    }
+    .container-precio-total {
+        margin: 0 35px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .opciones-resumen {
+        display: block;
+    }
+    .descripcion-opcion-escogida {
+        width: 100%;
+    }
+    .container-imagen-opciones {
+        margin-top: 25px;
+        width: 100%;
+    }
+    .imagen-opciones {
+    }
+    .precio-boton {
+        position: initial;
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .container-precio-total {
+        display: block;
+    }
+    .container-resumen-precios {
+        width: 100%;
+    }
+    .container-total-pagar {
+        margin-top: 40px;
+        width: 100%;
+    }
+     
+}

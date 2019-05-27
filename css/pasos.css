@@ -4,6 +4,7 @@
 }
 .steps {
     width: 100%;
+    padding-top: 70px;
 }
 .container-escoger {
     /* border: 1px solid black; */
@@ -32,7 +33,6 @@
     color: #3A478F;
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 70px;
     text-align: center;
 }
 .pasos {
@@ -80,16 +80,20 @@
 .paso-paso {
     display: none;
 }
+.negrilla {
+    font-weight: bold;
+}
+.tamaño-altura-fijo {
+    height: 560px;
+    overflow: auto;
+}
 .opciones {
     /* border: 1px solid red; */
     box-sizing: border-box;
     position: relative;
     
 }
-.seleccionado {
-    border: 1px solid rgb(32, 50, 96);
-    box-shadow: 0 0 20px 0 rgba(32,50,96, 0.2), 0 5px 5px 0 rgba(32,50,96, 0.24);
-}
+
 .check {
     position: absolute;
     right: 10px;
@@ -111,6 +115,11 @@
     border-left: 3px solid white;
     border-bottom: 3px solid white;
     transform: rotate(-45deg);
+}
+.seleccionado {
+    border: 1px solid rgb(32, 50, 96);
+    box-shadow: 0 0 20px 0 rgba(32,50,96, 0.2), 0 5px 5px 0 rgba(32,50,96, 0.24);
+    display: flex;
 }
 .imagen-opciones {
     /* position: relative; */
@@ -140,6 +149,13 @@
 /* .opciones:active .contenedor-opciones-botones , */
 .opciones:hover .contenedor-opciones-botones {
     display: flex;
+}
+.opciones input{
+    display: none;
+}
+.opciones input + span{
+    cursor: pointer;
+    line-height: 40px;
 }
 .contenedor-ayuda {
     position: absolute;
@@ -229,7 +245,21 @@
     display: flex;
     justify-content: flex-end;
 }
-
+.title-comidas {
+    margin-bottom: 40px;
+}
+.contenido-salon {
+    color: rgb(52, 71, 94);
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+@media screen and (max-width:960px) {
+    .steps {
+        padding-top: 160px;
+    }
+}
 @media screen and (max-width: 950px) {
     .container-pasos {
         margin: 50px 50px;

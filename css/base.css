@@ -84,15 +84,14 @@ hr{
 .list-menu:nth-child(4):hover::after{
     transform: scaleY(1.5);
 }
-.list-menu:nth-child(5) {
-    display: none;
-}
 .list-menu:last-child {
-    /* display: none; */
     position: relative;
 }
-.mi-cuenta-modal{
+.list-menu:last-child:hover .mi-cuenta-modal{
     display: flex;
+}
+.mi-cuenta-modal{
+    display: none;
     flex-direction: column;
     justify-content: space-between;   
     position: absolute;
@@ -110,14 +109,19 @@ hr{
     align-items: flex-start;
     /* font-size: 14px; */
 }
-.list-menu .mi-cuenta-modal .container-miCuenta a{
+.list-menu .mi-cuenta-modal .container-miCuenta a, .list-menu .mi-cuenta-modal .container-miCuenta button {
     color: black;
     cursor: pointer;
     text-align: initial;
     padding-left: 10px; 
 }
-.list-menu .mi-cuenta-modal .container-miCuenta:last-child a {
+.list-menu .mi-cuenta-modal .container-miCuenta:last-child button {
     color: #c70303;
+    border:none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 .icon-exit {
     color: #c70303;
@@ -145,7 +149,7 @@ hr{
     display: flex;
     align-items: center;
 }
-.list-menu .mi-cuenta-modal .container-miCuenta:hover a{
+.list-menu .mi-cuenta-modal .container-miCuenta:hover a, .list-menu .mi-cuenta-modal .container-miCuenta:hover button{
     text-decoration: underline;
 }
 .container-miCuenta:last-child {
@@ -341,6 +345,9 @@ hr{
 }
 
 
+.modal-menu {
+    display: none;
+}
 
 
 
@@ -439,6 +446,8 @@ hr{
         height: 94px;
         background: #1A284D;
         justify-content: space-between;
+        position: fixed;
+        z-index: 20;
     }
     .menus {
         justify-content: flex-end;
@@ -459,6 +468,7 @@ hr{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
     .menu-linea-superior , .menu-linea-central , .menu-linea-inferior{ 
         width: 30px;
@@ -488,6 +498,10 @@ hr{
         justify-content: center;
         display: flex;
     }
+    .list-menu:nth-child(4):hover {
+        background: #1A284D;
+        font-size: 18px;
+    }
     .list-menu:nth-child(4) a {
         content: "Haz tu cotización";
     }
@@ -496,6 +510,37 @@ hr{
     }
     .container-empresa:nth-child(4) .empresa{
         order: 1;
+    }
+    .modal-menu {
+        transform: translateX(-100vw);
+        transition: transform .3s ease-in-out;
+        display: initial;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: fixed;
+        top: 94px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #1A284D;
+        z-index: 200;
+    }
+    .list-menu-modal li a {
+        font-size: 35px;
+        font-weight: 400;
+        color:#687AA8;
+        text-decoration: none;
+    }
+    .list-menu-modal li a:hover {
+        color: white;
+    }
+    .list-menu-modal {
+        list-style: none;
+    }
+    .list-menu-modal li {
+        margin-bottom: 15px;
     }
     
 }
@@ -556,4 +601,7 @@ hr{
         text-align: center;
         font-size: 12px;
     }
+}
+.mostrar-menu {
+    transform: translateX(0);
 }

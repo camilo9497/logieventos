@@ -5,12 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Iniciar Sesión</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,800|Karla:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/login.css">
+
+
+    <style>
+        .container-registrarse {
+            width: 100%;
+        }
+
+        .formulario-registrarse {
+            width: 60%;
+        }
+
+        form h2 {
+            margin-bottom: 30px;
+            font-size: 35px;
+        }
+
+        .btn-registrarse {
+            width: 130px;
+        }
+
+        @media screen and (max-width:900px) {
+            .formulario-registrarse {
+                width: 75%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -38,8 +63,8 @@
                         <a href="">Cotización</a>
                     </li>
                     <!-- <li class="list-menu">
-                        <a href="">Iniciar Sesion</a>
-                    </li> -->
+                            <a href="">Iniciar Sesion</a>
+                        </li> -->
                     <li class="list-menu">
                         <a href="">Mi cuenta</a>
                         <div class="mi-cuenta-modal">
@@ -71,59 +96,38 @@
         </div>
     </header>
 
-
-
-    <section class="login">
-        <div class="container-iniciar-sesion">
-            <form class="formulario-iniciar-sesion" action="" method="POST">
-                <h2>Iniciar Sesion</h2>
-                <div class="container-datos">
-                    <label for="usuario">Usuario</label>
-                    <input class="usuario" type="text" name="usuario" placeholder="Usuario" required>
-                </div>
-
-                <div class="container-datos">
-                    <label for="contrasena">Contraseña</label>
-                    <input class="contrasena" type="password" name="contrasena" placeholder="Contraseña" required>
-                </div>
-                <div class="container-button">
-                    <button class="btn-iniciar-sesion" type="submit">Iniciar Sesión</button>
-                </div>
-            </form>
-        </div>
-        <div class="container-registrarse">
-            <form class="formulario-registrarse" action="" method="POST">
-                <h2>Crer una cuenta</h2>
-                <div class="container-datos-registro">
-                    <label for="nombre">Nombre</label>
-                    <input class="nombre" type="text" name="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="container-datos-registro">
-                    <label for="apellido">Apellido</label>
-                    <input class="apellido" type="text" name="apellido" placeholder="Apellido" required>
-                </div>
-                <div class="container-datos-registro">
-                    <label for="telefono">Telefono</label>
-                    <input class="telefono" type="text" name="telefono" placeholder="Telefono" required>
-                </div>
-                <div class="container-datos-registro">
-                    <label for="email">email</label>
-                    <input class="email" type="text" name="email" placeholder="Email" required>
-                </div>
-                <div class="container-datos-registro">
-                    <label for="usuario">Usuario</label>
-                    <input class="usuario" type="text" name="usuario" placeholder="Usuario" required>
-                </div>
-                <div class="container-datos-registro">
-                    <label for="contrasena">Contraseña</label>
-                    <input class="contrasena" type="text" name="contrasena" placeholder="Contraseña" required>
-                </div>
-                <div class="container-button-registrarse">
-                    <button class="btn-registrarse" type="submit">Registrarse</button>
-                </div>
-            </form>
-        </div>
-    </section>
+    <div class="container-registrarse">
+        <form class="formulario-registrarse" action="" method="POST">
+            <h2>Editar mi Perfil de Usuario</h2>
+            <div class="container-datos-registro">
+                <label for="nombre">Nombre</label>
+                <input class="nombre" type="text" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="container-datos-registro">
+                <label for="apellido">Apellido</label>
+                <input class="apellido" type="text" name="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="container-datos-registro">
+                <label for="telefono">Telefono</label>
+                <input class="telefono" type="text" name="telefono" placeholder="Telefono" required>
+            </div>
+            <div class="container-datos-registro">
+                <label for="email">email</label>
+                <input class="email" type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="container-datos-registro">
+                <label for="usuario">Usuario</label>
+                <input class="usuario" type="text" name="usuario" placeholder="Usuario" required>
+            </div>
+            <div class="container-datos-registro">
+                <label for="contrasena">Contraseña</label>
+                <input class="contrasena" type="text" name="contrasena" placeholder="Contraseña" required>
+            </div>
+            <div class="container-button-registrarse">
+                <button class="btn-registrarse" type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
 
     <footer class="footer">
         <div class="footer-superior">
@@ -169,6 +173,5 @@
         </div>
     </footer>
 </body>
-<script src="./js/base.js"></script>
 
 </html>

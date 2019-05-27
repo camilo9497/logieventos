@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pasos</title>
+    <title>Paso-Resumen</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pasos.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/resumen.css">
 </head>
 
 <body>
@@ -72,12 +73,12 @@
 
     <section class="steps">
         <p class="title-cotizacion">Haz tu cotización</p>
-        <p class="paso-paso">Eventos</p>
+        <p class="paso-paso">Resumen</p>
         <div class="container-pasos">
             <div class="pasos-bar">
                 <div class="pasos">
                     <div class="pasos-circulo "></div>
-                    <div class="pasos-linea paso-barra-no-alcanzado"></div>
+                    <div class="pasos-linea "></div>
                 </div>
                 <div class="pasos-detalles negrilla">
                     <p>Eventos</p>
@@ -85,8 +86,8 @@
             </div>
             <div class="pasos-bar">
                 <div class="pasos">
-                    <div class="pasos-circulo paso-circulo-no-alcanzado"></div>
-                    <div class="pasos-linea paso-barra-no-alcanzado"></div>
+                    <div class="pasos-circulo"></div>
+                    <div class="pasos-linea "></div>
                 </div>
                 <div class="pasos-detalles">
                     <p>Temáticas</p>
@@ -94,8 +95,8 @@
             </div>
             <div class="pasos-bar">
                 <div class="pasos">
-                    <div class="pasos-circulo paso-circulo-no-alcanzado"></div>
-                    <div class="pasos-linea paso-barra-no-alcanzado"></div>
+                    <div class="pasos-circulo"></div>
+                    <div class="pasos-linea "></div>
                 </div>
                 <div class="pasos-detalles">
                     <p>Tamaño de Salones</p>
@@ -103,8 +104,8 @@
             </div>
             <div class="pasos-bar">
                 <div class="pasos">
-                    <div class="pasos-circulo paso-circulo-no-alcanzado"></div>
-                    <div class="pasos-linea paso-barra-no-alcanzado"></div>
+                    <div class="pasos-circulo"></div>
+                    <div class="pasos-linea "></div>
                 </div>
                 <div class="pasos-detalles">
                     <p>Salón</p>
@@ -112,8 +113,8 @@
             </div>
             <div class="pasos-bar">
                 <div class="pasos">
-                    <div class="pasos-circulo paso-circulo-no-alcanzado"></div>
-                    <div class="pasos-linea paso-barra-no-alcanzado"></div>
+                    <div class="pasos-circulo"></div>
+                    <div class="pasos-linea "></div>
                 </div>
                 <div class="pasos-detalles">
                     <p>Menús</p>
@@ -121,7 +122,7 @@
             </div>
             <div class="pasos-bar">
                 <div class="pasos">
-                    <div class="pasos-circulo paso-circulo-no-alcanzado"></div>
+                    <div class="pasos-circulo"></div>
                     <!-- <div class="pasos-linea"></div> -->
                 </div>
                 <div class="pasos-detalles">
@@ -130,101 +131,109 @@
             </div>
         </div>
         <form method="POST" action="login.html">
-            <div class="container-escoger">
-                <div class="opciones">
-                    <div class="check seleccionado">
-                        <div class="chulo"></div>
-                    </div>
-                    <img class="imagen-opciones" src="images/bodahawaina.jpg" alt="">
-                    <div class="opciones-btn">
-                        <div class="contenedor-ayuda">
-                            <p class="title-opciones">Bodas</p>
-                            <div class="contenedor-opciones-botones">
-                                <div class="btn-opciones-hover ver-mas-opciones">
-                                    <a href="eventos.html">Ver más</a>
-                                </div>
-                                <input type="radio" class="btn-opciones-hover" />
-                                <span class="btn-opciones-hover">Seleccionar</span>
-                            </div>
+            <div class="container-escoger-resumen">
+                <div class="opciones-resumen">
+                    <div class="descripcion-opcion-escogida">
+                        <h2 class="title-resumen">Boda Vintage</h2>
+                        <p class="description-resumen">Descripcion breve. Nullam malesuada porta tristique. Sed sit amet
+                            dignissim purus, vel
+                            imperdiet nunc. Etiam vitae eros turpis. Aenean
+                            euismod enim nec ultricies feugiat. Proin cursus lacus felis,</p>
+                        <div class="precio-boton">
+                            <p class="precio-seccion">$315000</p>
+                            <button class="btn-cambiar">Cambiar</button>
                         </div>
                     </div>
-                </div>
-                <div class="opciones">
-                    <img class="imagen-opciones" src="images/grados.jpg" alt="">
-                    <div class="opciones-btn">
-                        <div class="opciones-btn">
-                            <div class="contenedor-ayuda">
-                                <p class="title-opciones">Grados</p>
-                                <div class="contenedor-opciones-botones">
-                                    <div class="btn-opciones-hover ver-mas-opciones">
-                                        <a href="eventos.html">Ver más</a>
-                                    </div>
-                                    <input type="radio" class="btn-opciones-hover" />
-                                    <span class="btn-opciones-hover">Seleccionar</span>
-                                </div>
-                            </div>
+                    <div class="container-imagen-opciones">
+                        <div class="check-resumen seleccionado-resumen">
+                            <div class="chulo"></div>
                         </div>
+                        <img class="imagen-opciones" src="images/bodahawaina.jpg" alt="">
                     </div>
                 </div>
-                <div class="opciones">
-                    <img class="imagen-opciones" src="images/15años.jpg" alt="">
-                    <div class="opciones-btn">
-                        <div class="opciones-btn">
-                            <div class="contenedor-ayuda">
-                                <p class="title-opciones">Fiestas de 15</p>
-                                <div class="contenedor-opciones-botones">
-                                    <div class="btn-opciones-hover ver-mas-opciones">
-                                        <a href="eventos.html">Ver más</a>
-                                    </div>
-                                    <input type="radio" class="btn-opciones-hover" />
-                                    <span class="btn-opciones-hover">Seleccionar</span>
-                                </div>
-                            </div>
+                <div class="opciones-resumen">
+                    <div class="descripcion-opcion-escogida">
+                        <h2 class="title-resumen">Salon Grande</h2>
+                        <p class="description-resumen">Descripcion breve. Nullam malesuada porta tristique. Sed sit amet
+                            dignissim purus, vel
+                            imperdiet nunc. Etiam vitae eros turpis. Aenean
+                            euismod enim nec ultricies feugiat. Proin cursus lacus felis,</p>
+                        <div class="precio-boton">
+                            <p class="precio-seccion">$315000</p>
+                            <button class="btn-cambiar">Cambiar</button>
                         </div>
                     </div>
-                </div>
-                <div class="opciones">
-                    <img class="imagen-opciones" src="images/decoracionbautizos.jpg" alt="">
-                    <div class="opciones-btn">
-                        <div class="opciones-btn">
-                            <div class="contenedor-ayuda">
-                                <p class="title-opciones">Bautismos</p>
-                                <div class="contenedor-opciones-botones">
-                                    <div class="btn-opciones-hover ver-mas-opciones">
-                                        <a href="eventos.html">Ver más</a>
-                                    </div>
-                                    <input type="radio" class="btn-opciones-hover" />
-                                    <span class="btn-opciones-hover">Seleccionar</span>
-                                </div>
-                            </div>
+                    <div class="container-imagen-opciones">
+                        <div class="check-resumen seleccionado-resumen">
+                            <div class="chulo"></div>
                         </div>
+                        <img class="imagen-opciones" src="images/bodahawaina.jpg" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="botones">
-                <div class="contenedor-botones">
-                    <button type="submit" class="btn-pasos">Regresar
-                        <div class="hacer-flechas-izq">
-                            <div class="hacia-arriba-izq color-flechas"></div>
-                            <div class="desde-centro-izq color-flechas"></div>
-                            <div class="hacia-abajo-izq color-flechas"></div>
+                <div class="opciones-resumen">
+                    <div class="descripcion-opcion-escogida">
+                        <h2 class="title-resumen">Salon Club Meta</h2>
+                        <p class="description-resumen">Descripcion breve. Nullam malesuada porta tristique. Sed sit amet
+                            dignissim purus, vel
+                            imperdiet nunc. Etiam vitae eros turpis. Aenean
+                            euismod enim nec ultricies feugiat. Proin cursus lacus felis,</p>
+                        <div class="precio-boton">
+                            <p class="precio-seccion">$315000</p>
+                            <button class="btn-cambiar">Cambiar</button>
                         </div>
-                        </buttom>
+                    </div>
+                    <div class="container-imagen-opciones">
+                        <div class="check-resumen seleccionado-resumen">
+                            <div class="chulo"></div>
+                        </div>
+                        <img class="imagen-opciones" src="images/bodahawaina.jpg" alt="">
+                    </div>
                 </div>
-                <div class="contenedor-botones">
-                    <button type="submit" class="btn-pasos">Continuar
-                        <div class="hacer-flechas">
-                            <div class="hacia-arriba color-flechas"></div>
-                            <div class="desde-centro color-flechas"></div>
-                            <div class="hacia-abajo color-flechas"></div>
+                <div class="opciones-resumen">
+                    <div class="descripcion-opcion-escogida">
+                        <h2 class="title-resumen">Menú 1</h2>
+                        <p class="description-resumen">Descripcion breve. Nullam malesuada porta tristique. Sed sit amet
+                            dignissim purus, vel
+                            imperdiet nunc. Etiam vitae eros turpis. Aenean
+                            euismod enim nec ultricies feugiat. Proin cursus lacus felis,</p>
+                        <div class="precio-boton">
+                            <p class="precio-seccion">$315000</p>
+                            <button class="btn-cambiar">Cambiar</button>
                         </div>
-                    </button>
+                    </div>
+                    <div class="container-imagen-opciones">
+                        <div class="check-resumen seleccionado-resumen">
+                            <div class="chulo"></div>
+                        </div>
+                        <img class="imagen-opciones" src="images/bodahawaina.jpg" alt="">
+                    </div>
                 </div>
 
             </div>
         </form>
+        <div class="container-precio-total">
+            <div class="container-resumen-precios">
+                <div class="container-titulos-precios">
+                    <p>Evento</p>
+                    <p>Evento Tematica</p>
+                    <p>Salon Grande</p>
+                    <p>Salon 1</p>
+                    <P>Menú 2</P>
+                </div>
+                <div class="container-precios-subtotal">
+                    <p>$315000</p>
+                    <p>$250000</p>
+                    <p>$120000</p>
+                    <p>$100000</p>
+                    <p>$89000</p>
+                </div>
+            </div>
+            <div class="container-total-pagar">
+                <h2>Total</h2>
+                <h2>$1050000</h1>
+            </div>
+        </div>
     </section>
-
 
     <footer class="footer">
         <div class="footer-superior">

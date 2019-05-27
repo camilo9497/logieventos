@@ -36,13 +36,15 @@ body {
 .container-datos-registro input{
     background:#EFF3F9;
 }
-.container-datos label , .container-datos-registro label{
+.container-datos input::placeholder , .container-datos-registro input::placeholder, .container-datos input, .container-datos-registro input{
     position: absolute;
     z-index: 10;
     bottom: 0;
     height: 40px;
     line-height: 40px;
     cursor: auto;
+    color: #385190;
+    font-size: 16px;
 }
 .container-datos input, .container-datos-registro input {
     outline: none;
@@ -50,7 +52,7 @@ body {
     position: absolute;
     bottom: 0;
     height: 40px;
-    width: 80%;
+    width: 100%;
 }
 .container-button , .container-button-registrarse {
     display: flex;
@@ -77,6 +79,9 @@ body {
 .container-registrarse {
     width: 50%;
     background: #EFF3F9;
+}
+label{
+    display: none;
 }
 
 @media screen and (max-width:960px) {

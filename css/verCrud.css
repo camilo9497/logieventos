@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-content-opciones {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.formulario-opciones {
+    display: flex;
+    width: 100%;
+    /* height: 31px; */
+    justify-content: space-between;
+}
+.buscador{
+    height: 31px;
+    width: calc(100% - 40px);
+}
+.buscador input {
+    height: 31px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: calc(100% - 20px);
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.container-filtros select {
+    height: 80%;
+    width: 80%;
+    outline: none;
+    border: none;
+}
+.container-filtros {
+    height: 29px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descargas-filtro {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.btn-descargar {
+    width: 120px;
+    height: 31px;
+    background:#1385E5;
+    border: none;
+    border: 1px solid #1385E5;
+    border-radius: 7px;
+    box-shadow: 6px 9px 28px -23px rgba(0,0,0,0.75); 
+    cursor: pointer;
+    outline: none;  
+}
+.crear-post {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-crear {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 31px;
+    background: #3DC349;
+    border: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid #3DC349 ;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn-crear span:nth-child(1){
+    font-size: 25px;
+    margin-right: 7px;
+    outline: none;
+}
+.container-tablas {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.titles-table td:nth-child(3) {
+    width: 30%;
+}
+.titles-table  {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-right: 20px;
+}
+.tabla {
+    border-top: none;
+    border-bottom: none;
+    border-collapse: collapse;
+}
+.sin-arriba {
+    border-top: none;
+}
+@media screen and (max-width:940px) {
+    .formulario-opciones {
+        flex-wrap: wrap;
+    }
+    .buscador {
+        width: 100%;
+    }
+    .buscador input {
+        width: 100%;
+    }
+    .descargas-filtro {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .btn-descargar {
+        width: 100%
+    }
+    .container-filtros, .descargar {
+        width: 48%;
+    }
+    .container-filtros select {
+        height: 95%;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container-content-opciones {
+        flex-wrap: wrap;
+    }
+    .formulario-opciones {
+        margin-bottom: 15px;
+    }
+    .crear-post, .btn-crear {
+        width: 100%;
+    }
+
+}
