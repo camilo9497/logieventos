@@ -31,6 +31,9 @@ hr{
 .logo p {
     cursor: pointer;
 }
+.img-logo {
+    height: 45px;
+}
 .menus {
     display: flex;
     width: 55%;
@@ -600,6 +603,14 @@ hr{
         width: 100%;
         text-align: center;
         font-size: 12px;
+    }
+    .img-logo {
+        height: 40px;
+    }
+}
+@media screen and (max-width:350px) { 
+    .img-logo {
+        height: 35px;
     }
 }
 .mostrar-menu {
